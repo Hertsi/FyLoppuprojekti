@@ -8,8 +8,10 @@ from math import radians, cos, sin, sqrt, atan2
 import folium
 from streamlit_folium import st_folium
 
-accel_data = pd.read_csv('LinearAcceleration.csv')
-gps_data = pd.read_csv('Location.csv')
+url1 = "https://raw.githubusercontent.com/Hertsi/FyLoppuprojekti/refs/heads/main/LinearAcceleration.csv"
+url2 = "https://raw.githubusercontent.com/Hertsi/FyLoppuprojekti/refs/heads/main/Location.csv"
+accel_data = pd.read_csv(url1)
+gps_data = pd.read_csv(url2)
 
 st.title('koiran iltalenkki')
 
